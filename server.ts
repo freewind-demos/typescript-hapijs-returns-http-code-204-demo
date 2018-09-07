@@ -10,7 +10,8 @@ server.route({
     method: 'GET',
     path: '/hello',
     handler: function (request: Request, h: ResponseToolkit) {
-        return 'hello world'
+        console.log('request /hello')
+        return 204
     }
 });
 

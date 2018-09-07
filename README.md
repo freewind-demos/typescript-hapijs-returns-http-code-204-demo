@@ -1,25 +1,30 @@
-TypeScript HapiJS Server Demo
-=============================
+TypeScript HapiJS Returns Http Code 204 Demo
+============================================
 
-使用[HapiJS](https://hapijs.com/)来创建一个NodeJS server.
-
-至于为什么我们要使用HapiJS而不使用Express，将在另一个Demo中说明(TODO)。
+使用hapijs如何向客户端发回一个http code `204`.
 
 ```
 npm install
 npm run demo
 ```
 
-It will start the server:
+将会启动Server:
 
 ```
 Server running at: http://localhost:8000
 ```
 
-And client can access: <http://localhost:8000/hello> with `GET` to get the answer:
+客户端访问：
 
 ```
-hello world
-```
+$ http GET http://localhost:8000/hello
+HTTP/1.1 200 OK
+Connection: keep-alive
+Date: Fri, 07 Sep 2018 12:50:17 GMT
+accept-ranges: bytes
+cache-control: no-cache
+content-length: 3
+content-type: application/json; charset=utf-8
 
-![demo](./images/demo.jpg)
+204
+```
