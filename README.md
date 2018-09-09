@@ -18,13 +18,10 @@ Server running at: http://localhost:8000
 
 ```
 $ http GET http://localhost:8000/hello
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Connection: keep-alive
-Date: Fri, 07 Sep 2018 12:50:17 GMT
-accept-ranges: bytes
+Date: Sun, 09 Sep 2018 04:47:36 GMT
 cache-control: no-cache
-content-length: 3
-content-type: application/json; charset=utf-8
 
-204
+
 ```

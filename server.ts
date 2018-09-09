@@ -11,7 +11,7 @@ server.route({
     path: '/hello',
     handler: function (request: Request, h: ResponseToolkit) {
         console.log('request /hello')
-        return 204
+        return h.response().code(204)
     }
 });
 
